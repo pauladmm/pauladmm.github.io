@@ -18,12 +18,12 @@ I'm excited to be part of the programming community and to contribute to it in m
 
 Thank you for visiting my page, and I look forward to connecting with you!
 
-## Currently working on :ray:
+## Currently working on :zap:
 - React
   - Hooks
 - Fetch API
 - GitHub
-## Interesed in learn :mag_right:
+## Interested in learn :mag_right:
 - User Authentication & Authorization
 - PostgreSQL
 - A lot of more of Databases
