@@ -1,0 +1,46 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFBF8;
+    color: #333;
+}
+.nav-link {
+    transition: all 0.3s ease;
+    position: relative;
+}
+.nav-link:hover {
+    color: #0891b2;
+}
+.nav-link.active {
+    color: #0891b2;
+    font-weight: 700;
+}
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    left: -1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.5rem;
+    width: 4px;
+    background-color: #0891b2;
+    border-radius: 2px;
+}
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 40vh;
+    max-height: 450px;
+    width: 100%;
+    max-width: 450px;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -21px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0891b2;
+    border: 2px solid #FDFBF8;
+}

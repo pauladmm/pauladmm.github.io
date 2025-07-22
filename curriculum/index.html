@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="antialiased">
+    <div class="min-h-screen lg:flex">
+      <!-- Barra de Navegación Lateral (Desktop) -->
+      <header
+        class="hidden lg:block w-1/3 xl:w-1/4 sticky top-0 max-h-screen p-8 xl:p-12"
+      >
+        <div class="flex flex-col justify-between h-full">
+          <div>
+            <h1 class="text-4xl font-bold text-slate-800">
+              Paula del Moral Milla
+            </h1>
+            <h2 class="text-xl mt-2 font-medium text-slate-600">
+              Full-Stack Dev | Data Engineer
+            </h2>
+            <p class="mt-4 text-slate-500">
+                Convirtiendo cada desafío en una oportunidad para aprender.
+            </p>
+            <nav class="mt-12">
+              <ul class="space-y-4">
+                <li>
+                  <a
+                    href="#resumen"
+                    class="nav-link text-slate-500 font-bold text-sm tracking-widest uppercase"
+                    >Sobre mi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#experiencia"
+                    class="nav-link text-slate-500 font-bold text-sm tracking-widest uppercase"
+                    >Experiencia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#habilidades"
+                    class="nav-link text-slate-500 font-bold text-sm tracking-widest uppercase"
+                    >Habilidades</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#proyectos"
+                    class="nav-link text-slate-500 font-bold text-sm tracking-widest uppercase"
+                    >Datos de interés</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#educacion"
+                    class="nav-link text-slate-500 font-bold text-sm tracking-widest uppercase"
+                    >Educación</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center space-x-4">
+            <a
+              href="[github.com/pauladmm]"
+              target="_blank"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+            </a>
+            <a
+              href="[linkedin.com/in/pdelmoral]"
+              target="_blank"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="mailto:[pdelmoralmilla@gmail.com]"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Contenido Principal -->
+      <main class="lg:w-2/3 xl:w-3/4 p-8 lg:py-24">
+        <!-- Header para móvil -->
+        <div class="lg:hidden mb-8">
+          <h1 class="text-4xl font-bold text-slate-800">
+            Paula del Moral Milla
+          </h1>
+          <h2 class="text-xl mt-2 font-medium text-slate-600">
+            Full-Stack Dev | Data Engineer
+          </h2>
+        </div>
+
+        <section id="resumen" class="mb-16 scroll-mt-24">
+          <h3
+            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-4 lg:hidden"
+          >
+            Sobre mi
+          </h3>
+          <p class="text-slate-600 leading-relaxed">
+            Desarrolladora web con especialización en ingeniería de datos y
+            sólida base científica. Mi transición desde la investigación química
+            me ha dotado de una perspectiva analítica única para resolver
+            problemas complejos. Combino habilidades técnicas en desarrollo
+            full-stack con expertise en arquitecturas de datos modernas,
+            pipelines ETL y herramientas cloud. Experiencia demostrada en adaptarme rápidamente a nuevas tecnologías y liderar proyectos desde la
+            conceptualización hasta la implementación.
+          </p>
+        </section>
+
+        <section id="experiencia" class="mb-16 scroll-mt-24">
+          <h3
+            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-8 lg:hidden"
+          >
+            Experiencia
+          </h3>
+          <div class="relative border-l-2 border-slate-200 pl-8 space-y-12">
+            <div class="timeline-item">
+              <h4 class="text-lg font-bold text-slate-800">
+                Data Engineer Intern
+              </h4>
+              <p class="text-md font-medium text-slate-600">Nucleoo</p>
+              <p class="text-sm text-slate-400">Abril, 2025 – Julio, 2025</p>
+              <ul class="mt-4 list-disc list-inside text-slate-600 space-y-2">
+                <li>
+                  Participación en proyectos con arquitectura Medallion para la
+                  organización y procesamiento de datos a gran escala.
+                </li>
+                <li>
+                  Manejo de tecnologías ETL: Airbyte, Apache Airflow y dbt para
+                  automatización de flujos de datos.
+                </li>
+                <li>
+                  Gestión ágil de proyectos con Jira y control de versiones con
+                  GitLab en entornos colaborativos
+                </li>
+                <li>
+                  Transformación de datos brutos a formatos estructurados
+                  optimizados para análisis y reporting.
+                </li>
+                <li>
+                  Creación de documentación técnica detallada y procedimientos
+                  operativos estándar.
+                </li>
+              </ul>
+            </div>
+            <div class="timeline-item">
+              <h4 class="text-lg font-bold text-slate-800">
+                Responsable Calidad e I+D
+              </h4>
+              <p class="text-md font-medium text-slate-600">Nutripeople</p>
+              <p class="text-sm text-slate-400">
+                Septiembre, 2018 – Febrero, 2022
+              </p>
+              <ul class="mt-4 list-disc list-inside text-slate-600 space-y-2">
+                <li>
+                  Control y gestión de protocolos de calidad para asegurar el
+                  cumplimiento de estándares.
+                </li>
+                <li>
+                  Desarrollo de nuevas fórmulas y testeo en planta piloto,
+                  aplicando metodologías de experimentación y análisis.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="habilidades" class="mb-16 scroll-mt-24">
+          <h3
+            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-4 lg:hidden"
+          >
+            Habilidades
+          </h3>
+          <p class="text-slate-600 mb-8">
+            Mi experiencia me proporciona en perfil dual en desarrollo web e
+            ingeniería de datos. Además, mi trayectoria en el sector científico
+            me ayuda a tener una resolución de problemas notable
+          </p>
+          <div class="relative border-l-2 border-slate-200 pl-8 space-y-12">
+            <div class="timeline-item">
+          <h4 class="text-lg font-bold text-slate-800">Ingeniería de Datos</h4>
+          <ul>
+            <li>ETL/ELT: Airbyte, Apache Airflow, dbt</li>
+            <li>Arquitecturas: Medallion, Data Lake, Data Warehouse</li>
+            <li>Cloud: Google Cloud Platform</li>
+          </ul>
+        </div>
+          <div class="timeline-item">
+          <h4 class="text-lg font-bold text-slate-800">Desarrollo Web</h4>
+          <ul>
+            <li>Frontend: Wordpress, HTML5, CSS3, JavaScript, React, Laravel</li>
+            <li>Backend: PHP, Python, Node.js</li>
+            <li>Bases de Datos: MySQL, PostgreSQL, MongoDB</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <h4 class="text-lg font-bold text-slate-800">Herramientas & Metodologías</h4>
+          <ul>
+            <li>Control de versiones: Git, GitLab</li>
+            <li>Gestión de proyectos: Jira</li>
+            <li>Contenedores: Docker</li>
+          </ul>
+        </div>
+          
+            </div>
+            <div class="chart-container mt-8">
+                <canvas id="skillsChart"></canvas>
+              </div>
+        </section>
+
+        <section id="proyectos" class="mb-16 scroll-mt-24">
+          <h3
+            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-8 lg:hidden"
+          >
+            Datos de interés
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
+            >
+              <h4 class="font-bold text-slate-800">
+                Perfil híbrido 
+              </h4>
+              <p class="mt-2 text-slate-600 text-sm">
+                Dev|Data con capacidad de integrar ambas disciplinas.
+              </p>
+              
+            </div>
+            <div
+              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
+            >
+              <h4 class="font-bold text-slate-800">
+                Experiencia
+              </h4>
+              <p class="mt-2 text-slate-600 text-sm">
+                En investigación científica que aporta rigor metodológico.
+              </p>
+              
+            </div>
+            <div
+              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
+            >
+              <h4 class="font-bold text-slate-800">
+                Fuerte orientación a resultados
+              </h4>
+              <p class="mt-2 text-slate-600 text-sm">
+                Y resolución de problemas complejos.
+              </p>
+              
+            </div>
+            <div
+              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
+            >
+              <h4 class="font-bold text-slate-800">
+                Disponibilidad
+              </h4>
+              <p class="mt-2 text-slate-600 text-sm">
+                Para proyectos presenciales, remotos e híbridos.
+              </p>
+              
+            </div>
+          </div>
+        </section>
+
+        <section id="educacion" class="scroll-mt-24">
+          <h3
+            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-8 lg:hidden"
+          >
+            Educación
+          </h3>
+          <div class="relative border-l-2 border-slate-200 pl-8 space-y-8">
+            <div class="timeline-item">
+              <h4 class="text-lg font-bold text-slate-800">
+                Técnico Superior en Desarrollo de Aplicaciones Web
+              </h4>
+              <p class="text-md font-medium text-slate-600">
+                IES Zaidin Vergeles
+              </p>
+              <p class="text-sm text-slate-400">2023 – 2025</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="text-lg font-bold text-slate-800">
+                Máster en Química Sostenible
+              </h4>
+              <p class="text-md font-medium text-slate-600">
+                Universidad de Valencia
+              </p>
+              <p class="text-sm text-slate-400">2016 – 2017</p>
+            </div>
+            <div class="timeline-item">
+              <h4 class="text-lg font-bold text-slate-800">Grado en Química</h4>
+              <p class="text-md font-medium text-slate-600">
+                Universidad de Granada
+              </p>
+              <p class="text-sm text-slate-400">2011 – 2015</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer para móvil -->
+        <footer class="lg:hidden mt-16 text-center">
+          <div class="flex items-center justify-center space-x-6">
+            <a
+              href="[github.com/pauladmm]"
+              target="_blank"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+            </a>
+            <a
+              href="[linkedin.com/in/pdelmoral]"
+              target="_blank"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a
+              href="mailto:[pdelmoralmilla@gmail.com]"
+              class="text-slate-500 hover:text-cyan-600 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </a>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
