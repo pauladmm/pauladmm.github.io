@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="antialiased">
@@ -180,8 +181,7 @@
               <p class="text-sm text-slate-400">Abril, 2025 – Julio, 2025</p>
               <ul class="mt-4 list-disc list-inside text-slate-600 space-y-2">
                 <li>
-                  Participación en proyectos con arquitectura Medallion para la
-                  organización y procesamiento de datos a gran escala.
+                  Participación en proyectos con arquitectura Medallion para la organización y procesamiento de datos a gran escala, implementando soluciones con BigQuery y desarrollando infraestructuras de datawarehouse robustas.
                 </li>
                 <li>
                   Manejo de tecnologías ETL: Airbyte, Apache Airflow y dbt para
@@ -224,101 +224,153 @@
         </section>
 
         <section id="habilidades" class="mb-16 scroll-mt-24">
-          <h3
-            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-4 lg:hidden"
-          >
-            Habilidades
+          <h3 class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-4 lg:hidden">
+              Habilidades
           </h3>
           <p class="text-slate-600 mb-8">
-            Mi experiencia me proporciona en perfil dual en desarrollo web e
-            ingeniería de datos. Además, mi trayectoria en el sector científico
-            me ayuda a tener una resolución de problemas notable
+              Mi experiencia me proporciona un perfil dual en desarrollo web e ingeniería de datos. Además, mi trayectoria en el sector científico me ha permitido desarrollar una capacidad notable para la resolución de problemas.
           </p>
-          <div class="relative border-l-2 border-slate-200 pl-8 space-y-12">
-            <div class="timeline-item">
-          <h4 class="text-lg font-bold text-slate-800">Ingeniería de Datos</h4>
-          <ul>
-            <li>ETL/ELT: Airbyte, Apache Airflow, dbt</li>
-            <li>Arquitecturas: Medallion, Data Lake, Data Warehouse</li>
-            <li>Cloud: Google Cloud Platform</li>
-          </ul>
-        </div>
-          <div class="timeline-item">
-          <h4 class="text-lg font-bold text-slate-800">Desarrollo Web</h4>
-          <ul>
-            <li>Frontend: Wordpress, HTML5, CSS3, JavaScript, React, Laravel</li>
-            <li>Backend: PHP, Python, Node.js</li>
-            <li>Bases de Datos: MySQL, PostgreSQL, MongoDB</li>
-          </ul>
-        </div>
-        <div class="timeline-item">
-          <h4 class="text-lg font-bold text-slate-800">Herramientas & Metodologías</h4>
-          <ul>
-            <li>Control de versiones: Git, GitLab</li>
-            <li>Gestión de proyectos: Jira</li>
-            <li>Contenedores: Docker</li>
-          </ul>
-        </div>
           
-            </div>
-            <div class="chart-container mt-8">
-                <canvas id="skillsChart"></canvas>
+          <div class="timeline-container">
+            <!-- Ingeniería de Datos -->
+            <div class="timeline-item">
+              <h4 class="skill-title">Ingeniería de Datos</h4>
+              
+              <div class="skill-category">
+                <span class="skill-label">ETL/ELT:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">Airbyte</span>
+                  <span class="skill-tag skill-tag-blue">Apache Airflow</span>
+                  <span class="skill-tag skill-tag-blue">dbt</span>
+                </div>
               </div>
-        </section>
-
-        <section id="proyectos" class="mb-16 scroll-mt-24">
-          <h3
-            class="text-lg font-bold text-cyan-600 uppercase tracking-widest mb-8 lg:hidden"
-          >
-            Datos de interés
-          </h3>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div
-              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
-            >
-              <h4 class="font-bold text-slate-800">
-                Perfil híbrido 
-              </h4>
-              <p class="mt-2 text-slate-600 text-sm">
-                Dev|Data con capacidad de integrar ambas disciplinas.
-              </p>
               
+              <div class="skill-category">
+                <span class="skill-label">Arquitecturas:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">Medallion</span>
+                  <span class="skill-tag skill-tag-blue">Data Lake</span>
+                  <span class="skill-tag skill-tag-blue">Data Warehouse</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <span class="skill-label">Cloud:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-blue">BigQuery</span>
+                </div>
+              </div>
             </div>
-            <div
-              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
-            >
-              <h4 class="font-bold text-slate-800">
-                Experiencia
-              </h4>
-              <p class="mt-2 text-slate-600 text-sm">
-                En investigación científica que aporta rigor metodológico.
-              </p>
+        
+            <!-- Desarrollo Web -->
+            <div class="timeline-item">
+              <h4 class="skill-title">Desarrollo Web</h4>
               
+              <div class="skill-category">
+                <span class="skill-label">Frontend:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-purple">WordPress</span>
+                  <span class="skill-tag skill-tag-purple">HTML5</span>
+                  <span class="skill-tag skill-tag-purple">CSS3</span>
+                  <span class="skill-tag skill-tag-purple">JavaScript</span>
+                  <span class="skill-tag skill-tag-purple">React</span>
+                  <span class="skill-tag skill-tag-purple">Laravel</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <span class="skill-label">Backend:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-purple">PHP</span>
+                  <span class="skill-tag skill-tag-purple">Python</span>
+                  <span class="skill-tag skill-tag-purple">Node.js</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <span class="skill-label">Bases de Datos:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-purple">MySQL</span>
+                  <span class="skill-tag skill-tag-purple">PostgreSQL</span>
+                  <span class="skill-tag skill-tag-purple">MongoDB</span>
+                </div>
+              </div>
             </div>
-            <div
-              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
-            >
-              <h4 class="font-bold text-slate-800">
-                Fuerte orientación a resultados
-              </h4>
-              <p class="mt-2 text-slate-600 text-sm">
-                Y resolución de problemas complejos.
-              </p>
+        
+            <!-- Herramientas & Metodologías -->
+            <div class="timeline-item">
+              <h4 class="skill-title">Herramientas & Metodologías</h4>
               
-            </div>
-            <div
-              class="bg-white/50 p-6 rounded-lg shadow-sm hover:shadow-lg transition-shadow border border-slate-200/50"
-            >
-              <h4 class="font-bold text-slate-800">
-                Disponibilidad
-              </h4>
-              <p class="mt-2 text-slate-600 text-sm">
-                Para proyectos presenciales, remotos e híbridos.
-              </p>
+              <div class="skill-category">
+                <span class="skill-label">Control de versiones:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-gray">Git</span>
+                  <span class="skill-tag skill-tag-gray">GitLab</span>
+                </div>
+              </div>
               
+              <div class="skill-category">
+                <span class="skill-label">Gestión de proyectos:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-gray">Jira</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <span class="skill-label">Contenedores:</span>
+                <div class="skill-tags">
+                  <span class="skill-tag skill-tag-gray">Docker</span>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+      </section>
+
+        <section id="proyectos" class="interest-section">
+    <h3 class="section-title lg:hidden">Datos de interés</h3>
+    
+    <div class="cards-grid">
+      <div class="card">
+        <div class="icon-container blue">
+          <i class="fas fa-user-gear"></i>
+        </div>
+        <div class="card-content">
+          <h4>Perfil híbrido</h4>
+          <p>Dev|Data con capacidad de integrar ambas disciplinas.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="icon-container purple">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="card-content">
+          <h4>Experiencia</h4>
+          <p>En investigación científica que aporta rigor metodológico.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="icon-container orange">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <div class="card-content">
+          <h4>Fuerte orientación a resultados</h4>
+          <p>Y resolución de problemas complejos.</p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="icon-container green">
+          <i class="fas fa-location-dot"></i>
+        </div>
+        <div class="card-content">
+          <h4>Disponibilidad</h4>
+          <p>Para proyectos presenciales, remotos e híbridos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
         <section id="educacion" class="scroll-mt-24">
           <h3

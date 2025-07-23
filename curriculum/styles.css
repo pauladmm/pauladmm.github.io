@@ -25,14 +25,7 @@ body {
     background-color: #0891b2;
     border-radius: 2px;
 }
-.chart-container {
-    position: relative;
-    margin: auto;
-    height: 40vh;
-    max-height: 450px;
-    width: 100%;
-    max-width: 450px;
-}
+
 .timeline-item::before {
     content: '';
     position: absolute;
@@ -44,3 +37,230 @@ body {
     background-color: #0891b2;
     border: 2px solid #FDFBF8;
 }
+
+.timeline-container {
+    position: relative;
+    border-left: 2px solid #e2e8f0;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.skill-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+}
+
+/* Categorías y etiquetas */
+.skill-category {
+    margin-bottom: 1.5rem;
+}
+
+.skill-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #475569;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Estilos base para todas las skill tags */
+.skill-tag {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: 1px solid;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill-tag:hover {
+    
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Colores específicos para cada categoría */
+.skill-tag-blue {
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-color: #bfdbfe;
+}
+
+.skill-tag-green {
+    background-color: #dcfce7;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.skill-tag-purple {
+    background-color: #e9d5ff;
+    color: #7c2d12;
+    border-color: #d8b4fe;
+}
+
+.skill-tag-orange {
+    background-color: #fed7aa;
+    color: #ea580c;
+    border-color: #fdba74;
+}
+
+.skill-tag-red {
+    background-color: #fecaca;
+    color: #dc2626;
+    border-color: #fca5a5;
+}
+
+.skill-tag-indigo {
+    background-color: #e0e7ff;
+    color: #4338ca;
+    border-color: #c7d2fe;
+}
+
+.skill-tag-gray {
+    background-color: #f1f5f9;
+    color: #374151;
+    border-color: #e2e8f0;
+}
+
+.skill-tag-yellow {
+    background-color: #fef3c7;
+    color: #d97706;
+    border-color: #fde68a;
+}
+
+.skill-tag-teal {
+    background-color: #ccfbf1;
+    color: #0f766e;
+    border-color: #99f6e4;
+}
+
+/* Sección de interés */
+.interest-section {
+    margin-bottom: 4rem;
+    scroll-margin-top: 6rem;
+    max-width: 1200px;
+    
+    margin-right: auto;
+  }
+  
+  /* Título de sección */
+  .section-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #0891b2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid de tarjetas */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .cards-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  /* Tarjeta individual */
+  .card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(203, 213, 225, 0.5);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: rgba(203, 213, 225, 0.8);
+  }
+  
+  /* Contenedor de iconos */
+  .icon-container {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .icon-container {
+    transform: scale(1.1);
+  }
+  
+  /* Colores de iconos */
+  .blue {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  }
+  
+  .purple {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  }
+  
+  .orange {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+  }
+  
+  .green {
+    background: linear-gradient(135deg, #22c55e, #10b981);
+  }
+  
+  /* Iconos */
+  .icon-container i {
+    font-size: 1.25rem;
+  }
+  
+  /* Contenido de la tarjeta */
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-content h4 {
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+    transition: color 0.3s ease;
+  }
+  
+  .card-content p {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover .card-content h4 {
+    color: #0f172a;
+  }
+  
+  .card:hover .card-content p {
+    color: #475569;
+  }
